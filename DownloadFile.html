@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DownloadFile</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: darkblue;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        h1, a {
+            opacity: 0;                    /* сначала невидимы */
+            animation: fadeIn 2s forwards; /* анимация появления */
+        }
+
+        h1 {
+            animation-delay: 0.5s;
+            margin-bottom: 20px;
+        }
+
+        a:first-of-type {
+            animation-delay: 1s;
+            margin-bottom: 10px;
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:nth-of-type(2) {  /* вторая ссылка на странице */
+            animation-delay: 1.2s;
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:last-of-type {
+            animation-delay: 1.5s;
+            color: lightgreen;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* сама анимация */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Игры</h1>
+    <a href="Poppy_Playtime_....torrent">1) Скачать Poppy Playtime 1-5 torrent </a>
+    <a href="Undertale by Igruha" class="undertale">2) Скачать Undertale torrent </a>
+    <a href="GameDovnloads.html">Вернуться на первую страницу</a>
+</body>
+</html>

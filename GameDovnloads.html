@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Games Download</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        h1, p, a {
+            opacity: 0;              /* сначала невидимы */
+            animation: fadeIn 2s forwards; /* запускаем анимацию */
+        }
+
+        h1 { 
+            animation-delay: 0.5s;   /* задержка появления */
+            color: darkblue;
+            margin-bottom: 20px;
+        }
+
+        p {
+            animation-delay: 1s;
+            margin-bottom: 20px;
+        }
+
+        a {
+            animation-delay: 1.5s;
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* сама анимация */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); } /* сдвиг снизу */
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Download What You Want</h1>
+    <p>Здесь будут появлятся новые игры</p>
+    <a href="DownloadFile.html">Перейти на вторую страницу</a>
+</body>
+</html>
